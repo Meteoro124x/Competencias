@@ -1,0 +1,131 @@
+.edit{    
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+}
+body{
+  background: #eff9ff;
+  
+}
+.link{
+    color: #ffffff;
+    padding: 0.5rem;
+    position: relative;
+}
+.link::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: all 0.8s ease;
+    font-size: 8;
+}
+.link::before{
+    bottom: 0;
+    left: 0;
+}
+.link:hover::before{
+    transform: scaleX(1);
+}
+.logo{
+    transition: 0.5s ease;
+}
+.logo:hover{
+    opacity: 0.5;
+}
+.barra{
+    background-color: #216ce7;
+}
+.pf{
+    background-color: #216ce7;
+    width: 1100px;
+    height: 600px;
+    margin: 20px auto;
+    border: 2px solid #ccccccd8;
+    padding: 50px;
+    color: #000000;
+    border-radius: 30mm;
+}   
+.cont{
+    background-color: #ededed;
+    border-radius: 2mm;
+}
+.bo{
+    background-color: #65c8ff;
+    border-radius: 4mm;
+    text-align: center;
+    border-color: #eff9ff;
+    color: #ededed;
+    width: 80px;
+    height: 40px;
+}
+body{
+    background: #eff9ff;
+}
+.ima{
+    border-radius: 2mm;
+}
+.hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
+  :root {
+    --_fw-900: 900;
+    --_fw-700: 700;
+    --_fw-400: 400;
+  
+    --_clr-900: #226ce7;
+    --_clr-700: #216ce7;
+    --_clr-400: #65c8ff;
+  }
+
+  .bubble-text {
+    font-size: clamp(1rem, calc(1rem + 2.5vw), 4rem);
+    color: hsl(0, 0%, 50%);
+    user-select: none;
+  
+    &.split-text {
+      display: inline-flex;
+    }
+  
+    & .split-char {
+      font-weight: 100;
+      transition: font-weight 0.5s ease;
+  
+      &:hover {
+        font-weight: var(--_fw-900);
+        color: var(--_clr-900);
+      }
+  
+      &:hover + .split-char {
+        font-weight: var(--_fw-700);
+        color: var(--_clr-700);
+      }
+      &:hover + .split-char + .split-char {
+        font-weight: var(--_fw-400);
+        color: var(--_clr-400);
+      }
+  
+      &:has(+ .split-char:hover) {
+        font-weight: var(--_fw-700);
+        color: var(--_clr-700);
+      }
+      &:has(+ .split-char + .split-char:hover) {
+        font-weight: var(--_fw-400);
+        color: var(--_clr-400);
+      }
+    }
+  }
+  .swiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 550px;
+    height: 350px;
+  }

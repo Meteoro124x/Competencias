@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eff9ff;
+  }  
+ 
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail {
+    height: 250px;
+    margin: 25px;
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    border: 2px solid #216ce7 ;
+    border-radius: 5mm;
+    justify-content: center;
+    box-shadow: 0px 10px 30px #143d81;
+    justify-content: space-between;
+    display: flex;
+   
+  }
+
+  .thumbnail:hover{
+    transform: scale(1.15);
+    box-shadow: 0px 15px 40px #143d81;
+
+  }
+  
+  .vistaprevia {
+    margin-top: 290px;
+    /*margin-top: 20px;*/
+  }
+  
+  .vistaprevia {
+    max-width: 250px;
+    /*max-height: 200;*/
+  }

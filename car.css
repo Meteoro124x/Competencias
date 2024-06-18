@@ -1,0 +1,16 @@
+body {
+    background: #b7a89f;
+    margin: 0;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper .swiper-slide {
+    width: 100%;
+    object-fit: cover;
+    padding: 2em;
+    width: 550px;
+    height: 350px;
+  }
